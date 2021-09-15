@@ -1,9 +1,11 @@
-package firstProject;
+package control;
 
 import java.util.Scanner;
 
-public class Test {
-	public static void main(String[] args) {
+public class SongSenungYeob 
+{
+	public static void main(String[] args) 
+	{
 		Scanner Sc = new Scanner(System.in);
 		boolean Calculator = true;
 		System.out.println("========== [ 비트 연산자 계산기 ] ========== ");
@@ -20,7 +22,7 @@ public class Test {
 				Oper = Sc.nextInt();
 				if (1 <= Oper && Oper <= 6)
 					break;
-				System.out.println("[ Error ] 잘못된 연산자 입력입니다 !");
+				System.out.println("[ Error : 잘못된 연산자 입력입니다 ]");
 			} while (true);
 
 			int Shift = 0;
@@ -67,7 +69,7 @@ public class Test {
 					System.out.println("계산기 사용을 이어 가겠습니다.");
 					break;
 				} else {
-					System.out.println("[ Error ] 잘못된 입력입니다");
+					System.out.println("[ Error : 잘못된 입력입니다 ]");
 				}
 			} while (true);
 		}
