@@ -42,7 +42,6 @@ public class MethodExample2 {
 	
 	public static double Divide(int A ,int B)
 	{
-		double Result = (double)A / B;
-		return Result;
+		return (double)A / B;
 	}
 }
