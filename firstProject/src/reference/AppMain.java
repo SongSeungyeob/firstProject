@@ -6,13 +6,14 @@ public class AppMain
 	public static void main(String[] args) 
 	{
 		int[] Scores = null;
+		
 		while(true) {
 			showMenu();
 			int menu = readInt("번호를 선택하세요 >> ");
 			if(menu == 1) {
 				int N = createStudent();
 				Scores = new int[N];
-			} else if(menu == 2) {
+			}  else if(menu == 2) {
 				inputValue(Scores);
 			} else if(menu == 3) {
 				showList(Scores);
